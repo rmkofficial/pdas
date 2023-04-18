@@ -1,8 +1,12 @@
 function ProfileCard(props) {
-  return <div>
-    <div>Title is: {props.title}</div>
-    <div>Handle is: {props.handle}</div>
-  </div>;
+  const {title,handle,image} = props;
+  return (
+    <div>
+      <img src={image} alt="pda logo"/>
+      <div>Title is: {title}</div>
+      <div>Handle is: {handle}</div>
+    </div>
+  );
 }
 
 export default ProfileCard;
